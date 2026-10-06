@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>LAND/TRACE — Agricultural Land Loss & Urban Expansion in India</title>
+<meta name="description" content="Digital Mapping of Agricultural Land Loss Due to Urban Expansion in India">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FULL-SCREEN AGRICULTURAL / URBAN-EXPANSION VIDEO -->
+<div class="video-bg">
+  <video id="bgVideo" autoplay muted loop playsinline poster="poster.jpg">
+    <source src="background.mp4" type="video/mp4">
+  </video>
+  <div class="video-color"></div>
+  <div class="video-gradient"></div>
+</div>
+
+<div class="grain"></div>
+<div class="cursor-glow"></div>
+
+<header class="nav">
+  <a class="logo" href="#home"><span>⌁</span> LAND/TRACE</a>
+  <nav>
+    <a href="#problem">The Problem</a>
+    <a href="#mapping">Digital Mapping</a>
+    <a href="#change">Land Change</a>
+    <a href="#solutions">Solutions</a>
+  </nav>
+  <div class="status"><i></i> INDIA LAND MONITOR</div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="tag"><span></span> ENVIRONMENT • GIS • REMOTE SENSING</div>
+    <h1>THE CITY<br>IS <em>SPREADING.</em><br>THE FIELDS ARE<br><strong>DISAPPEARING.</strong></h1>
+    <p class="hero-text">
+      Digital mapping reveals how India's expanding cities are transforming
+      agricultural landscapes — and where that change is happening.
+    </p>
+    <div class="hero-buttons">
+      <a href="#mapping" class="btn main-btn">See how mapping works <b>↓</b></a>
+      <a href="#change" class="btn line-btn">Explore land change</a>
+    </div>
+  </div>
+
+  <div class="hero-data">
+    <div class="data-card">
+      <small>WHAT WE ARE WATCHING</small>
+      <strong>FIELD → CITY</strong>
+      <div class="mini-bars">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="card-row"><span>URBAN PRESSURE</span><b>RISING</b></div>
+    </div>
+    <div class="location-card">
+      <span>LAND-USE OBSERVATION</span>
+      <b>INDIA / URBAN FRINGE</b>
+      <p>Where farmland meets roads, housing and industry.</p>
+    </div>
+  </div>
+
+  <div class="hero-bottom">
+    <span>01 — OBSERVE</span>
+    <span>Satellite imagery → GIS → Change detection</span>
+    <span class="scroll">SCROLL ↓</span>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section problem" id="problem">
+  <div class="section-title">
+    <div><span class="number">01</span><small>THE PROBLEM</small></div>
+    <h2>When urban growth<br>reaches the <em>farm.</em></h2>
+  </div>
+
+  <div class="problem-grid">
+    <div class="large-copy glass">
+      <span class="eyebrow">URBAN EXPANSION</span>
+      <h3>Growth does not stop at the city boundary.</h3>
+      <p>
+        As towns and cities expand, development often moves into their
+        surrounding rural fringe. Agricultural parcels can be converted
+        into housing colonies, roads, industrial areas and other built-up land.
+      </p>
+      <p>
+        The challenge is not simply knowing that change exists. We need to know
+        <strong>where it happened, how quickly it happened, what land was affected,
+        and what the pattern looks like over time.</strong>
+      </p>
+    </div>
+
+    <div class="impact-card glass">
+      <div class="impact-icon">◫</div>
+      <span>LAND CONVERSION</span>
+      <h3>FARMLAND<br><em>→</em> BUILT-UP</h3>
+      <div class="conversion">
+        <div class="field"><span>AGRICULTURE</span></div>
+        <div class="arrow">→</div>
+        <div class="city"><span>URBAN</span></div>
+      </div>
+    </div>
+
+    <div class="impact-card glass">
+      <div class="impact-icon">⌁</div>
+      <span>LAND FRAGMENTATION</span>
+      <h3>ONE FIELD<br><em>→</em> MANY PIECES</h3>
+      <div class="fragment">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </div>
+
+    <div class="impact-card glass">
+      <div class="impact-icon">≈</div>
+      <span>ENVIRONMENTAL PRESSURE</span>
+      <h3>SOIL • WATER<br>• FOOD SYSTEM</h3>
+      <p>Land-use change can affect soil cover, runoff, groundwater demand, local climate and food-producing capacity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIGITAL MAPPING -->
+<section class="section mapping" id="mapping">
+  <div class="section-title">
+    <div><span class="number">02</span><small>DIGITAL MAPPING</small></div>
+    <h2>See change<br>from <em>above.</em></h2>
+  </div>
+
+  <div class="mapping-intro">
+    <p>Satellite images turn a changing landscape into data. GIS then lets us layer, compare and measure that change.</p>
+  </div>
+
+  <div class="process">
+    <article class="process-card glass active">
+      <div class="step">01</div>
+      <div class="satellite-art"><span></span><i></i><b></b></div>
+      <h3>Satellite imagery</h3>
+      <p>Capture repeated images of the same area across different dates.</p>
+    </article>
+    <div class="process-line"></div>
+    <article class="process-card glass">
+      <div class="step">02</div>
+      <div class="layer-art"><i></i><i></i><i></i></div>
+      <h3>Land-cover classification</h3>
+      <p>Identify agriculture, vegetation, water, roads and built-up surfaces.</p>
+    </article>
+    <div class="process-line"></div>
+    <article class="process-card glass">
+      <div class="step">03</div>
+      <div class="compare-art"><span>2015</span><b>→</b><span>2025</span></div>
+      <h3>Change detection</h3>
+      <p>Compare time-series layers to detect where land use has changed.</p>
+    </article>
+    <div class="process-line"></div>
+    <article class="process-card glass">
+      <div class="step">04</div>
+      <div class="decision-art">GIS<span>+</span>DATA</div>
+      <h3>Planning decisions</h3>
+      <p>Use mapped evidence to guide sustainable urban expansion.</p>
+    </article>
+  </div>
+
+  <div class="map-panel glass">
+    <div class="map-info">
+      <small>CHANGE-DETECTION MODEL</small>
+      <h3>Urban fringe analysis</h3>
+      <p>Green = agricultural landscape<br>Orange = built-up expansion<br>White = detected transition</p>
+      <div class="map-key"><span><i class="green-dot"></i> AGRICULTURE</span><span><i class="orange-dot"></i> BUILT-UP</span></div>
+    </div>
+    <div class="terrain">
+      <div class="terrain-grid"></div>
+      <div class="farm-zone"></div>
+      <div class="urban-zone"></div>
+      <div class="roads r1"></div><div class="roads r2"></div>
+      <div class="change-zone z1"></div><div class="change-zone z2"></div><div class="change-zone z3"></div>
+      <span class="map-label l1">AGRICULTURAL ZONE</span>
+      <span class="map-label l2">URBAN EXPANSION</span>
+      <span class="map-label l3">CHANGE DETECTED</span>
+      <div class="scanner"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="section change" id="change">
+  <div class="section-title">
+    <div><span class="number">03</span><small>LAND-USE CHANGE</small></div>
+    <h2>A landscape<br>rewritten over <em>time.</em></h2>
+  </div>
+
+  <div class="timeline glass">
+    <div class="year y1"><span>2010</span><div class="sat-view old"><i></i><i></i><i></i></div><p>More continuous agricultural land</p></div>
+    <div class="timeline-arrow">→</div>
+    <div class="year y2"><span>2015</span><div class="sat-view mid"><i></i><i></i><i></i></div><p>Roads and built-up patches emerge</p></div>
+    <div class="timeline-arrow">→</div>
+    <div class="year y3"><span>2020</span><div class="sat-view newer"><i></i><i></i><i></i></div><p>Urban footprint expands outward</p></div>
+    <div class="timeline-arrow">→</div>
+    <div class="year y4"><span>2025</span><div class="sat-view now"><i></i><i></i><i></i></div><p>More fragmented agricultural landscape</p></div>
+  </div>
+
+  <div class="insight-grid">
+    <div class="insight glass"><b>01</b><h3>Locate</h3><p>Find agricultural land close to expanding urban boundaries.</p></div>
+    <div class="insight glass"><b>02</b><h3>Compare</h3><p>Overlay imagery from different years to reveal transitions.</p></div>
+    <div class="insight glass"><b>03</b><h3>Measure</h3><p>Calculate affected area and identify hotspots of conversion.</p></div>
+    <div class="insight glass"><b>04</b><h3>Monitor</h3><p>Continue observing vulnerable zones as cities grow.</p></div>
+  </div>
+</section>
+
+<!-- INDIA -->
+<section class="section india" id="india">
+  <div class="section-title">
+    <div><span class="number">04</span><small>INDIA IN FOCUS</small></div>
+    <h2>The pressure is<br>at the <em>urban edge.</em></h2>
+  </div>
+
+  <div class="india-layout">
+    <div class="india-copy glass">
+      <span class="eyebrow">A NATIONAL PERSPECTIVE</span>
+      <h3>Urban expansion is a spatial story.</h3>
+      <p>
+        India's metropolitan regions and fast-growing cities create expanding
+        peri-urban zones where rural and urban land uses overlap.
+      </p>
+      <p>
+        Digital mapping provides a repeatable way to study these transition
+        zones rather than relying only on ground observations.
+      </p>
+      <div class="chips"><span>GIS</span><span>REMOTE SENSING</span><span>LAND COVER</span><span>CHANGE DETECTION</span></div>
+    </div>
+
+    <div class="india-visual glass">
+      <div class="india-outline">
+        <svg viewBox="0 0 360 430">
+          <path d="M94 23 L126 13 L158 27 L181 48 L214 58 L236 83 L254 99 L281 113 L274 137 L292 158 L286 180 L306 203 L296 229 L275 237 L270 266 L250 284 L238 313 L222 345 L203 375 L184 410 L166 386 L150 357 L129 339 L115 309 L99 292 L87 266 L70 246 L61 218 L44 202 L51 177 L42 155 L59 137 L61 110 L77 93 L70 65 Z"/>
+        </svg>
+        <span class="hotspot h1">DELHI NCR</span>
+        <span class="hotspot h2">MUMBAI</span>
+        <span class="hotspot h3">BENGALURU</span>
+        <span class="hotspot h4">HYDERABAD</span>
+        <div class="map-pulse p1"></div><div class="map-pulse p2"></div><div class="map-pulse p3"></div>
+      </div>
+      <div class="map-caption">Illustrative urban-fringe monitoring zones — not a statistical map.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section class="section solutions" id="solutions">
+  <div class="section-title">
+    <div><span class="number">05</span><small>WHAT CAN WE DO?</small></div>
+    <h2>Map smarter.<br>Grow <em>better.</em></h2>
+  </div>
+
+  <div class="solution-grid">
+    <div class="solution glass"><span>01</span><h3>Protect productive zones</h3><p>Identify and prioritize high-value agricultural land near expanding cities.</p></div>
+    <div class="solution glass"><span>02</span><h3>Plan compact growth</h3><p>Use spatial evidence to reduce unnecessary outward expansion.</p></div>
+    <div class="solution glass"><span>03</span><h3>Monitor continuously</h3><p>Update land-cover maps regularly so change is detected early.</p></div>
+    <div class="solution glass"><span>04</span><h3>Connect data to policy</h3><p>Turn satellite evidence into practical planning and conservation decisions.</p></div>
+  </div>
+
+  <div class="final glass">
+    <div>
+      <span class="eyebrow">THE BIG IDEA</span>
+      <h2>Every pixel<br>tells a <em>story.</em></h2>
+      <p>Digital mapping gives us the ability to see that story, measure it and make better decisions before irreversible land-use change becomes invisible.</p>
+    </div>
+    <div class="final-orbit"><span>GIS</span><i></i><b>LAND</b><i></i><span>AI</span></div>
+  </div>
+
+  <footer>
+    <b>LAND/TRACE</b>
+    <span>Digital Mapping of Agricultural Land Loss Due to Urban Expansion in India</span>
+    <span>ENVIRONMENTAL AWARENESS PROJECT</span>
+  </footer>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
